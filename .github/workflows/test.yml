@@ -35,6 +35,6 @@ jobs:
 
             | Metric | Value |
             | ------ | ----- |
-            | Metric1 | ${{ steps.collect-metrics.outputs.metric1 }} |
+            | Metric1 | ${{ steps.collect-metrics.outputs }} |
             | Metric2 | ${{ steps.collect-metrics.outputs.metric2 }} |
             | Metric3 | ${{ steps.collect-metrics.outputs.metric3 }} |

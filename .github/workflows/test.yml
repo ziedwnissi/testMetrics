@@ -23,7 +23,7 @@ jobs:
       - name: Run tests and collect metrics
         run: |
           # Run the tests with Jest and collect the metrics
-          npx jest --json --outputFile=test-results.json
+          npm run test:cov
 
       - name: Comment on pull request
         uses: peter-evans/create-or-update-comment@v1

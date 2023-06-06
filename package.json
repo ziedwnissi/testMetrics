@@ -4,7 +4,8 @@
   "description": "use actions to display metrics",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --json --outputFile=test-results.json",
+    "test:cov": "jest --coverage --detectOpenHandles --forceExit --ci --coverageReporters=json-summary"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ziedwnissi/testMetrics/issues"
   },
-  "homepage": "https://github.com/ziedwnissi/testMetrics#readme"
+  "homepage": "https://github.com/ziedwnissi/testMetrics#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
 }

@@ -21,17 +21,19 @@ jobs:
         run: npm ci
 
       - name: Run tests and collect metrics
+        id: collect-metrics
         run: |
           # Run the tests with Jest and collect the metrics
-          npx jest --json --outputFile=test-results.json
+          npm run test:cov
+          echo COVERAGE_PERCENTAGE=$(node -p "require('./coverage/coverage-summary.json').total.lines.pct")  >> $GITHUB_ENV
 
       - name: Comment on pull request
         uses: peter-evans/create-or-update-comment@v1
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            **Test Metrics:**
+            **Code Coverage:**
 
-            ```json
-            ${{ steps.<previous-step-id>.outputs.testMetrics }}
-            ```
+            | Metric         | Value              |
+            | -------------- | ------------------ |
+            | Coverage       | ${{ env.COVERAGE_PERCENTAGE }}% |

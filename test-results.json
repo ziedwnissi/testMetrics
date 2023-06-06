@@ -1,0 +1,74 @@
+{
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 1,
+    "numPassedTests": 2,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 2,
+    "openHandles": [],
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesRemovedList": [],
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1686056648918,
+    "success": true,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "test"
+                    ],
+                    "duration": 2,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "test should be equal",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "should be equal"
+                },
+                {
+                    "ancestorTitles": [
+                        "test"
+                    ],
+                    "duration": 0,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "test calls advancedFilterService",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "calls advancedFilterService"
+                }
+            ],
+            "endTime": 1686056649223,
+            "message": "",
+            "name": "/Users/e0436681/Library/CloudStorage/OneDrive-Sanofi/houssem/testmetrics/testMetrics/test.spec.js",
+            "startTime": 1686056648960,
+            "status": "passed",
+            "summary": ""
+        }
+    ],
+    "wasInterrupted": false
+}

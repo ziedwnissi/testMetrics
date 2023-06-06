@@ -32,6 +32,8 @@ jobs:
           body: |
             **Test Metrics:**
 
-            ```json
-            ${{ steps.<previous-step-id>.outputs.testMetrics }}
-            ```
+            | Metric | Value |
+            | ------ | ----- |
+            | Metric1 | ${{ steps.collect-metrics.outputs.metric1 }} |
+            | Metric2 | ${{ steps.collect-metrics.outputs.metric2 }} |
+            | Metric3 | ${{ steps.collect-metrics.outputs.metric3 }} |

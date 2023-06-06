@@ -37,4 +37,4 @@ jobs:
 
             | Metric         | Value              |
             | -------------- | ------------------ |
-            | Coverage       | ${COVERAGE_PERCENTAGE}% |
+            | Coverage       | ${{ env.COVERAGE_PERCENTAGE }}% |

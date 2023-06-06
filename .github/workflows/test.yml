@@ -25,7 +25,7 @@ jobs:
         run: |
           # Run the tests with Jest and collect the metrics
           npm run test:cov
-          COVERAGE_PERCENTAGE=$(node -p "require('./coverage/coverage-summary.json').total.lines.pct")  >> $GITHUB_ENV
+          echo COVERAGE_PERCENTAGE=$(node -p "require('./coverage/coverage-summary.json').total.lines.pct")  >> $GITHUB_ENV
 
       - name: Comment on pull request
         uses: peter-evans/create-or-update-comment@v1
